@@ -69,6 +69,60 @@ body {
   margin: 0 auto;
   object-fit: cover;
 }
+.projects-body {
+  padding: 20px 40px 50px 40px; /* Added '0px' to match the other side */
+}
+
+.project-card {
+  background-color: white; /* White background card */
+  border-radius: 15px; /* Rounded corners */
+  overflow: hidden; /* Keeps content inside corners */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Drop shadow */
+  transition: transform 0.3s; /* Smooth hover animation */
+  height: 100%; /* Makes all cards same height */
+  display: flex; /* Flexbox helps align internal items */
+  flex-direction: column;
+}
+
+.project-card:hover {
+  transform: translateY(-5px); /* Floats up on hover */
+}
+
+.project-img-container {
+  height: 180px; /* Fixed height for image area */
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image fills area without stretching */
+  transition: transform 0.5s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.project-info {
+  padding: 20px;
+  background: linear-gradient(180deg, #0a1643 0%, #304bc1 100%);
+  color: white;
+  flex-grow: 1; /* Pushes content to fill height */
+}
+
+.project-title {
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.project-desc {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.85);
+  margin-bottom: 0;
+}
+
 .hobbies-body {
   padding: 20px 40px 60px 40px;
 }
@@ -141,7 +195,10 @@ body {
   color: white;
   transform: scale(1.1);
 }
+/* ================= MOBILE RESPONSIVENESS ================= */
 @media (max-width: 768px) {
+  /* 1. START of Mobile Mode (The opening bracket is above) */
+
   .vertical-line {
     display: none;
   }
@@ -150,14 +207,17 @@ body {
     flex-direction: column;
     text-align: center;
   }
+
   .prof-img {
     margin-bottom: 20px;
     width: 200px;
     height: 200px;
   }
 
+  /* This fixes the spacing on mobile for ALL sections */
   .hobbies-body,
-  .education-body {
+  .education-body,
+  .projects-body {
     padding: 20px;
   }
-}
+} /* 2. END of Mobile Mode (This bracket closes the block) */
