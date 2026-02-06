@@ -1,158 +1,226 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leovin Bandiola - Portfolio</title>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    
-    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
-    
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-<body>
-
-    <div class="container mt-5">
-
-        <div class="content-section">
-            <div class="about-header">
-                <h1>About Me</h1>
+  <body>
+    <div class="container mt-5 mb-5">
+      <div class="student-profile-card">
+        <div class="row align-items-center">
+          <div class="col-md-4 text-center mb-4 mb-md-0">
+            <div class="profile-img-wrapper">
+              <img src="imgs/prof.jpg" alt="Profile" class="profile-img" />
             </div>
-            <div class="about-body">
-                <div class="text-center">
-                    <img src="imgs/prof.jpg" alt="Profile" class="prof-img">
-                </div>
-                <div class="vertical-line d-none d-md-block"></div>
-                <div class="flex-grow-1">
-                    <h2 class="my-name-header">Leovin Bandiola</h2>
-                    <p class="text-muted mb-0">
-                        A third-year Bachelor of Science in Information Technology (BSIT) student at
-                        the University of
-                        Mindanao, with an interest in developing practical and user-focused technology solutions.
+          </div>
+
+          <div class="col-md-8 text-center text-md-start">
+            <h1 class="student-name">Leovin Bandiola</h1>
+            <div class="divider-line"></div>
+            <p class="student-bio">
+              A third-year Bachelor of Science in Information Technology (BSIT)
+              student at the University of Mindanao, with an interest in
+              developing practical and user-focused technology solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="skills-section-dark">
+        <h2 class="section-header">Skills</h2>
+
+        <div class="row align-items-center">
+          <div class="col-md-8 mx-auto">
+            <div
+              id="skillsCarousel"
+              class="carousel slide"
+              data-bs-interval="false"
+            >
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="glass-card">
+                    <h3>Programming Fundamentals</h3>
+                    <p>
+                      Basic understanding of coding logic, syntax, and
+                      problem-solving using beginner-level languages.
                     </p>
+                  </div>
                 </div>
+
+                <div class="carousel-item">
+                  <div class="glass-card">
+                    <h3>Web Development</h3>
+                    <p>
+                      Experience with HTML, CSS, and Bootstrap to create
+                      responsive layouts.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="carousel-item">
+                  <div class="glass-card">
+                    <h3>Database Management</h3>
+                    <p>
+                      Knowledge of SQL basics and handling data storage for
+                      applications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="carousel-indicators custom-dots">
+                <button
+                  type="button"
+                  data-bs-target="#skillsCarousel"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#skillsCarousel"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#skillsCarousel"
+                  data-bs-slide-to="2"
+                ></button>
+              </div>
             </div>
+          </div>
+
+          <div class="col-md-3 d-none d-lg-block text-center">
+            <img src="imgs/skill.png" alt="Decoration" class="sticker-img" />
+          </div>
         </div>
+      </div>
 
-        <div class="content-section">
-            <h2 class="section-title">Education</h2>
-            <div class="education-body">
-                <div class="row align-items-center">
-                    <div class="col-md-5 text-center mb-3 mb-md-0">
-                        <img src="imgs/uni.jpg" alt="Uni" class="uni-img bg-warning p-4">
+      <div class="projects-section-light">
+        <h2 class="section-header-dark">Projects</h2>
+
+        <div class="projects-wrapper">
+          <div class="project-window">
+            <div class="project-slider" id="projectSlider">
+              <div class="project-item">
+                <div class="row g-0 h-100">
+                  <div class="col-md-5">
+                    <div class="project-img-curve">
+                      <img
+                        src="imgs/project 1.png"
+                        alt="Project 1"
+                        class="img-fluid"
+                      />
                     </div>
-                    <div class="col-md-7">
-                        <p class="text-secondary lead">
-                            <strong>Bachelor of Science in Computer Science</strong><br>
-                            <em>University of Mindanao, 2022 - 2026</em>
-                        </p>
-                        <p class="text-muted">
-                            3rd Year
-                        </p>
-                    </div>
+                  </div>
+                  <div class="col-md-7 project-text-card p-5">
+                    <h3>Agdao Boarding House</h3>
+                    <h5 class="text-secondary">
+                      Python - IT5 Boarding House System
+                    </h5>
+                    <p>
+                      Basic understanding of coding logic, syntax, and
+                      problem-solving using beginner-level languages.
+                    </p>
+                    <div></div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="project-item">
+                <div class="row g-0 h-100">
+                  <div class="col-md-5">
+                    <div class="project-img-curve">
+                      <img
+                        src="imgs/project 2.png"
+                        alt="Project 2"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7 project-text-card p-5">
+                    <h3>Complaint Management System</h3>
+                    <h5 class="text-secondary">
+                      C# - IT13 Complaint Management System
+                    </h5>
+                    <p>A group project done with Pandili and Castillo.</p>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="project-item">
+                <div class="row g-0 h-100">
+                  <div class="col-md-5">
+                    <div class="project-img-curve">
+                      <img
+                        src="imgs/project 3.png"
+                        alt="Project 3"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-7 project-text-card p-5">
+                    <h3>Capstone - DevStack</h3>
+                    <h5 class="text-secondary">Capstone Project</h5>
+                    <p>
+                      With the lead programmer Jamili, it's a still
+                      work-in-progress group project done along with Aquino.
+                    </p>
+                    <div></div>
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
+
+          <div class="nav-sidebar">
+            <div class="nav-dot active" onclick="scrollToProject(0, this)">
+              <img src="imgs/icon 1.png" alt="Home" />
+            </div>
+
+            <div class="nav-dot" onclick="scrollToProject(1, this)">
+              <img src="imgs/icon 2.png" alt="Music" />
+            </div>
+
+            <div class="nav-dot" onclick="scrollToProject(2, this)">
+              <img src="imgs/icon 3.png" alt="User" />
+            </div>
+          </div>
         </div>
-
-         
-
-        <div class="content-section">
-    <h2 class="section-title">Projects Throughout the Years</h2>
-    <div class="projects-body">
-        <div class="row g-4">
-            
-            <div class="col-md-4">
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="imgs/project 1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <div class="project-info">
-                        <h4 class="project-title">IT5 Boarding House Administration and Monitoring System</h4>
-                        <p class="project-desc">
-                            A project done in IT5 using Python.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="imgs/project 2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <div class="project-info">
-                        <h4 class="project-title">IT13 Complaint Management</h4>
-                        <p class="project-desc">
-                            A project done in IT13 using C#. A group work done together with Pandili and Castillo.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-4">
-                <div class="project-card">
-                    <div class="project-img-container">
-                        <img src="imgs/project 3.png" alt="Project 3" class="project-img">
-                    </div>
-                    <div class="project-info">
-                        <h4 class="project-title">Capstone Project - DevStack</h4>
-                        <p class="project-desc">
-                            A project still in work in progress. A project done together with Jamili and Aquino.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+      </div>
     </div>
-</div>
 
-        <div class="content-section">
-            <h2 class="section-title">Hobbies</h2>
-            <div class="hobbies-body">
-                <div class="row g-4">
-
-                    <div class="col-md-4">
-                        <div class="hobby-card">
-                            <img src="imgs/hobby 1.jpg" alt="Hobby1" class="hobby-img bg-warning p-2">
-
-                            <div class="hobby-title mt-3">Reading</div>
-                            <div class="hobby-desc">Loves to read novels, mainly web novels.</div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="hobby-card">
-                            <img src="imgs/hobby 2.jpg" alt="Hobby2" class="hobby-img bg-warning p-2">
-                            <div class="hobby-title mt-3">Cosplay</div>
-                            <div class="hobby-desc">To become and act like your favorite characters.</div>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4">
-                        <div class="hobby-card">
-                            <img src="imgs/hobby 3.png" alt="Hobby3" class="hobby-img bg-warning p-2">
-                            <div class="hobby-title mt-3">Gaming</div>
-                            <div class="hobby-desc">In order to escape reality for a while</div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-   </div> </div> <footer class="main-footer">
-        <div class="container text-center">
-            <h3 class="footer-title">IT9a/L - Profile</h3>
-
-            <a href="https://www.facebook.com/19Leovin99" target="_blank" class="social-link">
-                <i class="fab fa-facebook"></i>
-            </a>
-        </div>
+    <footer class="main-footer text-center py-4">
+      <h3 class="text-white-50 fs-5">IT9a/L - Profile</h3>
+      <a
+        href="https://www.facebook.com/19Leovin99"
+        target="_blank"
+        class="text-white-50 fs-2"
+      >
+        <i class="fab fa-facebook"></i>
+      </a>
     </footer>
 
     <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
-</body>
+    <script>
+      function scrollToProject(index, element) {
+        const slider = document.getElementById("projectSlider");
+        const percentage = index * -100;
+        slider.style.transform = `translateY(${percentage}%)`;
+
+        const dots = document.querySelectorAll(".nav-dot");
+        dots.forEach((dot) => dot.classList.remove("active"));
+        element.classList.add("active");
+      }
+    </script>
+  </body>
 </html>
